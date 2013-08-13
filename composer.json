@@ -1,0 +1,30 @@
+{
+    "name": "hautelook/frontend-bundle",
+    "description": "Symfony2 bundle that integrates various third party libraries to provide a sensible platform for rapid frontend development.",
+    "keywords": ["Symfony2", "Bootstrap", "Frontend", "Dashboard"],
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Bill Hance",
+            "email": "billhance@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.2",
+        "symfony/framework-bundle": ">=2.0,<3.0-dev",
+        "oryzone/boilerplate-bundle": "4.*",
+        "knplabs/knp-menu-bundle": "1.1.*",
+        "whiteoctober/breadcrumbs-bundle": "dev-master",
+        "white-october/pagerfanta-bundle": "1.0.*@dev",
+        "pagerfanta/pagerfanta": "1.0.*@dev",
+        "twbs/bootstrap": "2.*",
+        "leafo/lessphp": "0.3.9",
+        "components/jquery": "1.9.1",
+        "components/font-awesome": "3.2.*"
+    },
+    "autoload": {
+        "psr-0": { "Hautelook\\FrontendBundle": "" }
+    },
+    "target-dir": "Hautelook/FrontendBundle"
+}

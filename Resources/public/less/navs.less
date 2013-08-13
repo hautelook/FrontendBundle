@@ -1,0 +1,64 @@
+.nav-tabs > li > a,
+.nav-pills > li > a,
+.nav-tabs.nav-stacked > li > a,
+.nav-tabs.nav-stacked > li:first-child > a,
+.nav-tabs.nav-stacked > li:last-child > a,
+.nav-tabs .dropdown-menu,
+.nav-pills .dropdown-menu,
+.tabs-below > .nav-tabs > li > a,
+.tabs-left > .nav-tabs > li > a,
+.tabs-right > .nav-tabs > li > a,
+{
+    .border-radius(0);
+}
+
+#nav-secondary {
+    background: @grayLighter;
+    padding: 0;
+    border-color: darken(@grayLighter, 5%);
+    .nav > li > a:hover,
+    .nav > li > a:focus {
+        text-decoration: none;
+        background-color: lighten(@grayLighter, 3%);
+    }
+    .nav-list {
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-bottom: 0;
+    }
+    .nav-list > li > a,
+    .nav-list .nav-header {
+        margin-left:  -15px;
+        margin-right: -15px;
+        text-shadow: 0 1px 0 rgba(255,255,255,.5);
+    }
+    .nav-list > li > a {
+        padding: 20px 15px;
+        font-size: 16px;
+        border-bottom: 1px solid darken(@grayLighter, 5%);
+        text-align:center;
+        .clearfix();
+    }
+    .nav-list > li:last-child > a {
+        border-bottom: none;
+    }
+    .nav-list li a i {
+        margin: 10px auto 25px auto;
+        display:block;
+        color: darken(@grayLighter, 25%);
+    }
+    .nav-list > .active > a,
+    .nav-list > .active > a:hover,
+    .nav-list > .active > a:focus {
+        color: @blue;
+        text-shadow: 0 1px 0 rgba(255,255,255,.5);
+        background-color: @white;
+    }
+    .nav-list > li > a:hover > i,
+    .nav-list > li > a:focus > i {
+        color: darken(@grayLighter, 35%);
+    }
+    .nav-list > li.active > a > i {
+        color: @blue;
+    }
+}
