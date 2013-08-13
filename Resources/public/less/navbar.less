@@ -1,0 +1,95 @@
+.navbar {
+    font-weight: normal;
+    -webkit-font-smoothing:antialiased;
+}
+
+.navbar-inner {
+    .border-radius(0);
+    .box-shadow(0 0 0 rgba(0,0,0,0));
+}
+
+.navbar-fixed-top,
+.navbar-static-top {
+    .navbar-inner {
+        .box-shadow(~"0 0 0 rgba(0,0,0,0)");
+    }
+}
+
+.navbar-fixed-bottom {
+    bottom: 0;
+    .navbar-inner {
+        .box-shadow(~"0 0 0 rgba(0,0,0,0)");
+    }
+}
+
+.navbar .btn-navbar .icon-bar {
+    .border-radius(0);
+}
+
+.navbar-search {
+    .search-query {
+        .border-radius(0);
+    }
+}
+
+.navbar .nav > .active > a,
+.navbar .nav > .active > a:hover,
+.navbar .nav > .active > a:focus {
+    text-decoration: none;
+    .box-shadow(inset 0 0 0 rgba(0,0,0,0));
+}
+
+header {
+    .container-fluid {
+        padding-right:0;
+        padding-left:0;
+    }
+    #nav-meta {
+        .navbar-inverse {
+            .navbar-inner {
+                background: @navbarInverseBackground;
+                border: none;
+            }
+        }
+    }
+
+    #nav-primary {
+        .navbar-inverse {
+            border-top: 1px solid @navbarInverseOutlineBorder;
+            border-bottom: 1px solid @navbarInverseOutlineBorder;
+            .navbar-inner {
+                min-height: @navbarHeaderHeight;
+                border-width: 1px 0 1px 0;
+            }
+            .navbar-text {
+                line-height: @navbarHeaderHeight;
+            }
+            .brand {
+                padding: ((@navbarHeaderHeight - @baseLineHeight) / 4) 20px ((@navbarHeaderHeight - @baseLineHeight) / 4);
+                font-family: @brandFontFamily;
+                font-size: 50px;
+                line-height: 50px;
+                text-transform: uppercase;
+            }
+            .divider-vertical {
+                height: @navbarHeaderHeight;
+            }
+            .nav {
+                margin-top: 0;
+                margin-bottom: 0;
+                > li {
+                    padding-top: ((@navbarHeaderHeight - @baseLineHeight) / 4);
+                    padding-bottom: ((@navbarHeaderHeight - @baseLineHeight) / 4);
+                    > a {
+                        font-size: 20px;
+                        padding: ((@navbarHeaderHeight - @baseLineHeight) / 4) 15px ((@navbarHeaderHeight - @baseLineHeight) / 4);
+                        .border-radius(0);
+                    }
+                > .dropdown-menu {
+                    top:80%;
+                    }
+                }
+            }
+        }
+    }
+}
