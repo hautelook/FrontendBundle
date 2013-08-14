@@ -20,7 +20,7 @@
         "leafo/lessphp": "0.3.9",
         "components/jquery": "1.*",
         "components/font-awesome": "3.2.*",
-        "oryzone/boilerplate-bundle": "4.1.0"
+        "oryzone/boilerplate-bundle": "dev-master"
     },
     "autoload": {
         "psr-0": { "Hautelook\\FrontendBundle": "" }
