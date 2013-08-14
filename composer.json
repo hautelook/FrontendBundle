@@ -19,7 +19,7 @@
         "pagerfanta/pagerfanta": "1.0.*",
         "twbs/bootstrap": "2.*",
         "leafo/lessphp": "0.3.9",
-        "components/jquery": "1.9.1",
+        "components/jquery": "1.*",
         "components/font-awesome": "3.2.*"
     },
     "autoload": {
