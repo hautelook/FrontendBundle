@@ -63,3 +63,15 @@ Example:
     </nav>
 {% endblock header %}
 ```
+
+ToDo
+----
+
+There are still quite a few todos.
+
+- Get rid of the jQuery vendor files in `Resources/public/js`
+- Add the right hand Navbar with login information (requires Gravatar bundle)
+- Add tests (Run Assetic:dump, Twig lint)
+- Figure out if there is a better way to manage the assetic configuration in a way that does not store
+  the whole assetic config file in the bundle (inflexible), but also does not suck.
+
