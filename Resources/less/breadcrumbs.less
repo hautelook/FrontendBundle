@@ -1,0 +1,46 @@
+.breadcrumb-bar {
+    margin-top: -28px;
+    margin-bottom: 28px;
+    padding-top: 20px;
+}
+
+.breadcrumb {
+    padding: 0;
+    margin-bottom: @line-height-computed;
+    list-style: none;
+    background-color: @breadcrumb-bg;
+    border-radius: @border-radius-base;
+    font-family: @headings-font-family;
+    text-transform: uppercase;
+    font-size: @breadcrumb-font-size;
+    color: @breadcrumb-color;
+    > li {
+        display: inline-block;
+        padding: 0 5px;
+        &:first-child {
+            padding-left: 0;
+        }
+        a {
+            display: inline-block;
+            color: @breadcrumb-link-color;
+            padding: @breadcrumb-padding-vertical @breadcrumb-padding-horizontal;
+            &:hover,
+            &:focus {
+                color: @breadcrumb-link-hover-color;
+                background: @breadcrumb-link-hover-bg;
+            }
+        }
+    }
+
+    > .active {
+        a {
+            color: @breadcrumb-active-color;
+            background: @breadcrumb-active-bg;
+            &:hover,
+            &:focus {
+                color: @breadcrumb-active-color;
+                background: @breadcrumb-active-bg;
+            }
+        }
+    }
+}

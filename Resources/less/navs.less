@@ -1,0 +1,57 @@
+.nav-tabs {
+    border-bottom: 1px solid @body-bg;
+    > li {
+        margin-bottom: -1px;
+        // Actual tabs (as links)
+        > a {
+            color: @gray-light;
+            margin-right: 0;
+            line-height: @line-height-base;
+            border: 1px solid @body-bg;
+            border-radius: @border-radius-base @border-radius-base 0 0;
+            &:hover {
+                border-color: @body-bg;
+            }
+
+            .h2 {
+                margin-top:0;
+                margin-right:0;
+                display:block;
+                text-align: center;
+            }
+            .h3 {
+                font-size: 16px;
+                text-transform: uppercase;
+                margin-top:0;
+                margin-right:0;
+                display:block;
+                text-align: center;
+            }
+        }
+
+        // Active state, and its :hover to override normal :hover
+        &.active > a {
+            &,
+            &:hover,
+            &:focus {
+                color: @nav-tabs-active-link-hover-color;
+                background-color: @nav-tabs-active-link-hover-bg;
+                border: 1px solid @nav-tabs-active-link-hover-border-color;
+                border-bottom-color: transparent;
+                cursor: default;
+            }
+        }
+    }
+    &.nav-panel-tabs {
+        > li {
+            &.active > a {
+                &,
+                &:hover,
+                &:focus {
+                    background-color: @panel-default-heading-bg;
+                    border: 1px solid @panel-default-heading-bg;
+                }
+            }
+        }
+    }
+}

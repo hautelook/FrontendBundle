@@ -1,0 +1,182 @@
+body {
+    &.hl-default {
+        .hl-theme-color {
+            color: @brand-default;
+        }
+        .hl-theme-bg {
+            background-color: lighten(@brand-default, 5%);
+            border-color: lighten(@brand-default, 5%);
+        }
+        .breadcrumb-bar {
+            background-color: darken(@brand-default, 5%);
+            border-color: darken(@brand-default, 5%);
+        }
+        .navbar-brand .hl-theme-color:after {
+            content: "";
+        }
+    }
+    &.hl-desktop {
+        .hl-theme-color {
+            color: @brand-desktop;
+        }
+        .hl-theme-bg {
+            background: @brand-desktop;
+            border-color: @brand-desktop;
+        }
+        .breadcrumb-bar {
+            background-color: darken(@brand-desktop, 5%);
+            border-color: darken(@brand-desktop, 5%);
+        }
+        .navbar-brand .hl-theme-color:after {
+            content: "Desktop";
+        }
+    }
+    &.hl-iphone {
+        .hl-theme-color {
+            color: @brand-iphone;
+        }
+        .hl-theme-bg {
+            background: @brand-iphone;
+            border-color: @brand-iphone;
+        }
+        .breadcrumb-bar {
+            background-color: darken(@brand-iphone, 5%);
+            border-color: darken(@brand-iphone, 5%);
+        }
+        .navbar-brand .hl-theme-color:after {
+            content: "iPhone";
+        }
+    }
+    &.hl-ipad {
+        .hl-theme-color {
+            color: @brand-ipad;
+        }
+        .hl-theme-bg {
+            background: @brand-ipad;
+            border-color: @brand-ipad;
+        }
+        .breadcrumb-bar {
+            background-color: darken(@brand-ipad, 5%);
+            border-color: darken(@brand-ipad, 5%);
+        }
+        .navbar-brand .hl-theme-color:after {
+            content: "iPad";
+        }
+    }
+    &.hl-success {
+        .hl-theme-color {
+            color: @brand-success;
+        }
+        .hl-theme-bg {
+            background: @brand-success;
+            border-color: @brand-success;
+        }
+        .breadcrumb-bar {
+            background-color: darken(@brand-success, 5%);
+            border-color: darken(@brand-success, 5%);
+        }
+        .navbar-brand .hl-theme-color:after {
+            content: "";
+        }
+    }
+    &.hl-primary {
+        .hl-theme-color {
+            color: @brand-primary;
+        }
+        .hl-theme-bg {
+            background: @brand-primary;
+            border-color: @brand-primary;
+        }
+        .breadcrumb-bar {
+            background-color: darken(@brand-primary, 5%);
+            border-color: darken(@brand-primary, 5%);
+        }
+        .navbar-brand .hl-theme-color:after {
+            content: "";
+        }
+    }
+    &.hl-info {
+        .hl-theme-color {
+            color: @brand-info;
+        }
+        .hl-theme-bg {
+            background: @brand-info;
+            border-color: @brand-info;
+        }
+        .breadcrumb-bar {
+            background-color: darken(@brand-info, 5%);
+            border-color: darken(@brand-info, 5%);
+        }
+        .navbar-brand .hl-theme-color:after {
+            content: "";
+        }
+    }
+    &.hl-warning {
+        .hl-theme-color {
+            color: @brand-warning;
+        }
+        .hl-theme-bg {
+            background: @brand-warning;
+            border-color: @brand-warning;
+        }
+        .breadcrumb-bar {
+            background-color: darken(@brand-warning, 5%);
+            border-color: darken(@brand-warning, 5%);
+        }
+        .navbar-brand .hl-theme-color:after {
+            content: "";
+        }
+    }
+    &.hl-danger {
+        .hl-theme-color {
+            color: @brand-danger;
+        }
+        .hl-theme-bg {
+            background: @brand-danger;
+            border-color: @brand-danger;
+        }
+        .breadcrumb-bar {
+            background-color: darken(@brand-danger, 5%);
+            border-color: darken(@brand-danger, 5%);
+        }
+        .navbar-brand .hl-theme-color:after {
+            content: "";
+        }
+    }
+}
+
+.nav-tabs {
+    > li {
+        &.active > a {
+            &,
+            &:hover,
+            &:focus {
+                color: @nav-tabs-active-link-hover-color;
+            }
+            &.hl-desktop {
+                color: @brand-desktop;
+            }
+            &.hl-iphone {
+                color: @brand-iphone;
+            }
+            &.hl-ipad {
+                color: @brand-ipad;
+            }
+            &.hl-success {
+                color: @brand-success;
+            }
+            &.hl-primary {
+                color: @brand-primary;
+            }
+            &.hl-info {
+                color: @brand-info
+            }
+            &.hl-warning {
+                color: @brand-warning;
+            }
+            &.hl-danger {
+                color: @brand-danger;
+            }
+        }
+    }
+}

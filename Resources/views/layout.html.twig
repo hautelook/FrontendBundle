@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+{% block html_tag %}
+<html lang="en">
+{% endblock html_tag %}
+{% block head %}
+    <head>
+        {% block head_meta %}
+            <meta charset="utf-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        {% endblock head_meta %}
+
+        <title>{% block page_title %}{% endblock page_title %}{% block application_title %} &mdash; Hautelook{% endblock application_title %}</title>
+
+        {% block global_icons %}
+            <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ asset('/bundles/hautelookfrontend/icon/apple-touch-icon-144-precomposed.png') }}">
+            <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ asset('/bundles/hautelookfrontend/icon/apple-touch-icon-114-precomposed.png') }}">
+            <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ asset('/bundles/hautelookfrontend/icon/apple-touch-icon-72-precomposed.png') }}">
+            <link rel="apple-touch-icon-precomposed" href="{{ asset('/bundles/hautelookfrontend/icon/apple-touch-icon-57-precomposed.png') }}">
+            <link rel="shortcut icon" href="{{ asset('/bundles/hautelookfrontend/icon/favicon.png') }}" />
+        {% endblock global_icons %}
+
+        {% block global_css %}
+            {% stylesheets '@custom_css' %}
+            <link rel="stylesheet" href="{{ asset_url }}" />
+            {% endstylesheets %}
+        {% endblock global_css %}
+
+        {% block page_css %}
+            {# Overwrite this block to add page specific css #}
+        {% endblock page_css %}
+
+        {% block head_javascripts %}
+            {# Overwrite this block to add javascript in the document head. Use with caution. #}
+        {% endblock head_javascripts %}
+
+        {% block head_extra %}
+            {# Overwrite this block to add any additional head elements #}
+        {% endblock head_extra %}
+    </head>
+{% endblock head %}
+{% block body %}
+    <body class="hl-{{ page_theme|default('default') }}">
+    {% block outer_header %}
+        <header>
+            {% block header %}{% endblock %}
+        </header>
+    {% endblock outer_header %}
+
+    {% block outer_content %}
+        <div class="container">
+            <div class="row">
+                {% block content %}
+                    {# Overwrite this block to add content #}
+                {% endblock content %}
+            </div>
+        </div>
+    {% endblock outer_content %}
+
+    {% block outer_footer %}
+        <footer>
+            <div class="container">
+                {% block footer %}
+                    {# Overwrite this block to add footer content #}
+                {% endblock footer %}
+            </div>
+        </footer>
+    {% endblock outer_footer %}
+
+    {% block modals %}{% endblock modals %}
+
+    {% block global_js %}
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.0/jquery.cookie.min.js"></script>
+        {% javascripts '@custom_js' %}
+        <script type="text/javascript" src="{{ asset_url }}"></script>
+        {% endjavascripts %}
+    {% endblock global_js %}
+
+    {% block page_js %}
+        {# Overwrite this block to add page specific javascript #}
+    {% endblock page_js %}
+    </body>
+{% endblock body %}
+</html>
