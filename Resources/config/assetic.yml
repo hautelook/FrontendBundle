@@ -11,7 +11,7 @@ assetic:
     assets:
         custom_css:
             inputs:
-                - %kernel.root_dir%/../src/Hautelook/FrontendBundle/Resources/less/build.less
+                - %kernel.root_dir%/../vendor/hautelook/frontend-bundle/Hautelook/FrontendBundle/Resources/less/build.less
                 - https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/3.0.0/css/bootstrap-datetimepicker.min.css
                 - https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/0.9.9/magnific-popup.css
                 - http://fonts.googleapis.com/css?family=Open+Sans:300

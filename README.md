@@ -26,7 +26,14 @@ $bundles = array(
 );
 ```
 
-and include the `assetic.yml` config file in the bundle
+and include the `assetic.yml` config file in the bundle:
+
+```yaml
+# app/config/config.yml
+
+imports:
+- { resource: ../../vendor/hautelook/frontend-bundle/Hautelook/FrontendBundle/Resources/config/assetic.yml }
+```
 
 You should now be able to
 
