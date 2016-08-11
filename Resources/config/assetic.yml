@@ -3,7 +3,7 @@ assetic:
     filters:
         cssrewrite: ~
         lessphp:
-            apply_to: "\.less$"
+            apply_to: '\.less$'
             formatter: "compressed"
             preserve_comments: false
     bundles:
